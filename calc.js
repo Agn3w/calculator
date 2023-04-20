@@ -14,6 +14,9 @@ function division(a,b){
     return a/b;
 }
 
+function operate()
+
+
 
 const b1 = document.getElementById("b1")
 b1.addEventListener("click", function(){
@@ -37,7 +40,13 @@ const b4 = document.getElementById("b4")
 b4.addEventListener("click", function(){
     const screen = document.getElementById("screen2")
     screen.textContent += "+";
-});
+    const b13 = document.getElementById("b13")
+b13.addEventListener("click", decimal);
+function decimal(){
+    const screen = document.getElementById("screen2")
+    screen.textContent += ".";
+    b13.removeEventListener("click", decimal);
+    }});
 
 const b5 = document.getElementById("b5")
 b5.addEventListener("click", function(){
@@ -61,7 +70,12 @@ const b8 = document.getElementById("b8")
 b8.addEventListener("click", function(){
     const screen = document.getElementById("screen2")
     screen.textContent += "-";
-});
+    b13.addEventListener("click", decimal);
+function decimal(){
+    const screen = document.getElementById("screen2")
+    screen.textContent += ".";
+    b13.removeEventListener("click", decimal);
+}});
 
 const b9 = document.getElementById("b9")
 b9.addEventListener("click", function(){
@@ -85,7 +99,12 @@ const b12 = document.getElementById("b12")
 b12.addEventListener("click", function(){
     const screen = document.getElementById("screen2")
     screen.textContent += "*";
-});
+    b13.addEventListener("click", decimal);
+function decimal(){
+    const screen = document.getElementById("screen2")
+    screen.textContent += ".";
+    b13.removeEventListener("click", decimal);
+}});
 
 const b13 = document.getElementById("b13")
 b13.addEventListener("click", decimal);
@@ -104,20 +123,29 @@ b14.addEventListener("click", function(){
 });
 
 const b15 = document.getElementById("b15")
-b15.addEventListener("click", function(){
-});
+b15.addEventListener("click", operate());
 
 const b16 = document.getElementById("b16")
 b16.addEventListener("click", function(){
     const screen = document.getElementById("screen2")
     screen.textContent += "/";
-});
+    b13.addEventListener("click", decimal);
+function decimal(){
+    const screen = document.getElementById("screen2")
+    screen.textContent += ".";
+    b13.removeEventListener("click", decimal);
+}});
 
 const clear = document.getElementById("clear")
 clear.addEventListener("click", function(){
     const screen = document.getElementById("screen2")
     screen.textContent = "";
-});
+    b13.addEventListener("click", decimal);
+function decimal(){
+    const screen = document.getElementById("screen2")
+    screen.textContent += ".";
+    b13.removeEventListener("click", decimal);
+}});
 
 const del = document.getElementById("delete")
 del.addEventListener("click", function(){

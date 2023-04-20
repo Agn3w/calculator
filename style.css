@@ -42,7 +42,7 @@
     font-family: sans-serif;
     color: white;
     text-shadow: 2px 2px 5px black;
-    word-wrap: break-word;
+    overflow: hidden;
     
 }
 .cdContainer{
