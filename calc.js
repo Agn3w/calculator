@@ -201,5 +201,8 @@ del.addEventListener("click", function(){
     const screenElement = screen2.textContent
     const newScreen = screenElement.slice(0, -1)
     screen2.innerHTML = newScreen;
+    if (!screen2.includes(".")){
+        decimal();
+    }
 });
 
