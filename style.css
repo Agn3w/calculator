@@ -16,35 +16,41 @@
     background-color: rosybrown;
 }
 
+
 .screenContainer{
     width: 300px;
     height: 150px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     
-    
+    }
+
+#screen{
+height: 100px;
+width: 262px;
+background-color: lightpink;
+border-radius: 10px;
+box-shadow: 1px 1px 5px inset;
+padding: 10px;
+
 }
 
 .screen{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100px;
-    width: 263px;
-    background-color: lightpink;
-    border-width: 1px;
-    border-color: darkgray;
-    border-radius: 10px;
-    box-shadow: inset 5px 5px 10px black;
+    height: 50px;
+    width: 262px;
     text-align: end;
-    font-size: 50px ;
+    font-size: 40px ;
     font-family: sans-serif;
     color: white;
     text-shadow: 2px 2px 5px black;
     overflow: hidden;
-    
 }
+
+
 .cdContainer{
     display: flex;
     justify-content: space-around;
