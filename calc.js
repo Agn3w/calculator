@@ -26,28 +26,36 @@ function operate(){
       let string2 = screenSplit[1];
       let a = parseFloat(string1);
       let b = parseFloat(string2);
-      screen2.textContent = addition(a,b);
+      let unrounded = addition(a,b);
+      let answer = Math.round(unrounded*100000)/100000
+      screen2.textContent = answer;
     } else if(screenText.includes("-")){
             const screenSplit = screenText.split("-");
             let string1 = screenSplit[0];
             let string2 = screenSplit[1];
             let a = parseFloat(string1);
             let b = parseFloat(string2);
-            screen2.textContent = subtraction(a,b);
+            let unrounded = subtraction(a,b);
+      let answer = Math.round(unrounded*100000)/100000
+      screen2.textContent = answer;
           } else if(screenText.includes("*")){
         const screenSplit = screenText.split("*");
         let string1 = screenSplit[0];
         let string2 = screenSplit[1];
         let a = parseFloat(string1);
         let b = parseFloat(string2);
-        screen2.textContent = multiplication(a,b);
+        let unrounded = multiplication(a,b);
+      let answer = Math.round(unrounded*100000)/100000
+      screen2.textContent = answer;
       } else if(screenText.includes("/")){
         const screenSplit = screenText.split("/");
         let string1 = screenSplit[0];
         let string2 = screenSplit[1];
         let a = parseFloat(string1);
         let b = parseFloat(string2);
-        screen2.textContent = division(a,b);
+        let unrounded = division(a,b);
+      let answer = Math.round(unrounded*100000)/100000
+      screen2.textContent = answer;
       }}
 
 
